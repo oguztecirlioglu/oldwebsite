@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #EBEDEF ;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*-------------Header-------*/
+#header{
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(-160deg,rgba(0,0,0,0),rgba(0,0,0,1)),url("img/space.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#user-info, #my-skills{
+    background: #EBEDEF;
+}
+
+.user-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+} 
+.user-box img{
+    border-radius: 50%;
+    width: 23vh;
+    border: 2px solid #fff;
+}
+
+.user-box h1, .user-box p{
+    color: #fff;
+    font-weight: 700;
+    margin: 7px;
+}
+ .user-box:hover{
+    transition: .2s;
+    background-color: rgba(62, 12, 149, .6);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.about-text{
+    position: relative;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+
+#about h3 {
+    text-align: center;
+}
+
+.scroll-btn {
+    bottom: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    padding: 7px 7px 14px;
+    border-radius: 30px;
+}
+
+.scroll-bar span{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 10px;
+    display: block;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 6px;
+    
+}
+
+.scroll-bar {
+animation: mover 0.7s infinite alternate cubic-bezier(.31,0,.7,-0);
+
+}
+
+@keyframes mover {
+    
+    0% {transform: translateY(0);}
+    
+    100% {transform: translateY(10px);}
+}
+
+.about{
+    padding-top: 10vh;
+    padding-bottom: 5vh;  
+}
+
+.row {
+    position: relative;
+	left:0;
+	width:100%;	
+}
+
+.profile-photo {
+    position: relative;
+    height: 400px;
+}
+
+.nav-bar {  
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    font-size: 20px; 
+}
+
+.navbar {
+    background: linear-gradient( 55deg, #032390,#3E0C95);
+}
+
+.navbar-toggler{
+    outline: none;
+}
+
+.navbar-nav{
+    float: right;
+    text-align: right;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.skills-bar {
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+    font-weight: 700;
+}
+
+.photo2 img{
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.progress{
+    border-radius: 10px !important;
+    background-color: #fff !important;
+    margin-bottom: 3vh;
+    border-color: #956d36;
+}
+.progress-bar{
+    border-radius: 16px;
+    background: linear-gradient(-55deg, #032390,#3E0C95) !important; 
+}
+
+.resume {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background:#EBEDEF;
+}
+
+.resume h2 {
+    margin-bottom: 5vh;
+}
+
+.resume p {
+    margin-bottom: 3vh;
+}
+
+.timeline{
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline:before{
+    content: "";
+    border-radius: 10px;
+    background: linear-gradient(-55deg, #032390,#3E0C95);
+    display: inline-block;
+    position: absolute;
+    left: 1vw;
+    width: .2vw;
+    height: 105%;
+    z-index: 1;
+}
+
+.timeline li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: .5vw;  
+    background: #E8E8F0;
+    border-radius: 5px;
+}
+
+.timeline li h4 {
+    background-color: #032390;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 5px 20px;
+    font-size: 15px;
+}
+
+.timeline li h4 span{
+  font-weight: 700;
+  color: #bbbbbb;
+  font-size: large;  
+}
+
+.timeline li:before{
+    content: '';
+    background: #F1F2CD;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid black;
+    left: .5vw ;
+    width: 1.1vw;
+    height: 1.1vw;
+    z-index: 1;
+}
+
+.projects {
+    background: #EBEDEF;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 20rem;
+}
+
+.project-item {
+    padding: 1rem;
+    background: #EBEDEF;
+    background-clip: border-box;
+    display: flex;
+}
+
+.project-item-icon {
+    width: 50%;
+    padding-right: .3rem;
+    background-color: #EBEDEF;
+}
+
+.project-item-description {
+    width: 50%;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #EBEDEF;
+}
+
+
+.btn{
+    background-color: #032390 !important;
+}
+
+
+#download :hover {
+    transition: .5s;
+    background-color:#3E0C95 !important;
+}
+
