@@ -91,9 +91,22 @@ animation: mover 0.7s infinite alternate cubic-bezier(.31,0,.7,-0);
 }
 
 .about{
-    padding-top: 10vh;
-    padding-bottom: 5vh;  
+    padding-top: 5vh;
+    width: 100%;
+    position: relative;
 }
+    
+.profile-photo {
+    border-radius: 30%;
+    width: 100%;
+    justify-content: center;
+    display: block;}
+  
+@media (min-width: 1400px) {
+    .about {padding-top: 10vh;
+        padding-bottom: 5vh;  }
+    .profile-photo{width: 100%;}    
+    }
 
 .row {
     position: relative;
@@ -101,10 +114,7 @@ animation: mover 0.7s infinite alternate cubic-bezier(.31,0,.7,-0);
 	width:100%;	
 }
 
-.profile-photo {
-    position: relative;
-    height: 400px;
-}
+
 
 .nav-bar {  
     top: 0;
